@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Urban Infrastructure Survey</name>
+    <description>Sample surveying dataset containing agricultural parcels, roadways, and control points.</description>
+    
+    <!-- Polygons -->
+    <Placemark>
+      <name>Central Park Sector A</name>
+      <description>Public recreation zone with grass lawn</description>
+      <ExtendedData>
+        <Data name="zone_type"><value>Recreation</value></Data>
+        <Data name="inspector"><value>Sarah Jenkins</value></Data>
+      </ExtendedData>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              -73.973,40.764,0
+              -73.981,40.768,0
+              -73.971,40.782,0
+              -73.963,40.778,0
+              -73.973,40.764,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <Placemark>
+      <name>Botanical Reservoir Quad</name>
+      <description>Water catchment perimeter</description>
+      <ExtendedData>
+        <Data name="zone_type"><value>Waterbody</value></Data>
+      </ExtendedData>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <coordinates>
+              -73.965,40.785,0
+              -73.968,40.787,0
+              -73.962,40.793,0
+              -73.959,40.791,0
+              -73.965,40.785,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+
+    <!-- LineStrings -->
+    <Placemark>
+      <name>East River Greenway Path</name>
+      <description>Paved pedestrian and bike transit trail</description>
+      <ExtendedData>
+        <Data name="route_id"><value>RT-109</value></Data>
+        <Data name="surface"><value>Asphalt</value></Data>
+      </ExtendedData>
+      <LineString>
+        <coordinates>
+          -73.960,40.755,0
+          -73.964,40.762,0
+          -73.967,40.771,0
+          -73.972,40.780,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+
+    <Placemark>
+      <name>Main Water Main Conduit</name>
+      <description>Subsurface pipeline</description>
+      <ExtendedData>
+        <Data name="diameter_mm"><value>600</value></Data>
+      </ExtendedData>
+      <LineString>
+        <coordinates>
+          -73.985,40.750,0
+          -73.978,40.758,0
+          -73.970,40.765,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+
+    <!-- Points -->
+    <Placemark>
+      <name>Geodetic Bench Mark #41</name>
+      <description>High precision GPS calibration monument</description>
+      <ExtendedData>
+        <Data name="elevation_m"><value>24.5</value></Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>-73.970,40.770,0</coordinates>
+      </Point>
+    </Placemark>
+
+    <Placemark>
+      <name>Observation Tower Summit</name>
+      <description>Weather monitoring station</description>
+      <Point>
+        <coordinates>-73.965,40.780,0</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>

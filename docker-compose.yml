@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  geospatial-api:
+    build: .
+    container_name: geospatial_measurement_api
+    ports:
+      - "8000:8000"
+    environment:
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - ./uploads:/app/uploads
+      - ./geospatial.db:/app/geospatial.db
+    restart: unless-stopped
